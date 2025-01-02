@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Result</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/result.css')}}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Contact Result</h1>
+        </header>
+        <main class="main-content">
+            <section class="message-section">
+                <h3>{{message}}</h3>
+            </section>
+            <section class="navigation">
+                <a href="{{url_for('home1')}}" class="btn">Home</a>
+                <a href="{{url_for('about')}}" class="btn">About</a>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2025 E-Commerce Platform. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

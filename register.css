@@ -1,0 +1,110 @@
+/* Apply a gradient background and center it */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Warm peach-pink gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/* Container for the form */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque white background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Reduced width for a more compact form */
+    text-align: center;
+}
+
+/* Heading style */
+h1 {
+    font-size: 2rem; /* Slightly smaller font size */
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1rem; /* Slightly smaller font size */
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Label styling */
+.form-label {
+    font-size: 1rem; /* Slightly smaller font size */
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Input field styles */
+.form-input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+    border-color: #ff7e5f;
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+}
+
+/* Submit button styles */
+.btn {
+    padding: 10px 20px;
+    background-color: #3fab18;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #feb47b;
+    transform: translateY(-2px); /* Subtle hover effect */
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .form-input {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}

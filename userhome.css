@@ -1,0 +1,203 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Soft background color for clean look */
+    color: #333; /* Dark text color for readability */
+    line-height: 1.6;
+}
+
+/* Header Section */
+.b {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    background-color: #2b2b2b;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav a {
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #08af16; /* Hover color */
+}
+
+/* Form Styling */
+.ab {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.abc {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 1rem;
+    display: none;
+}
+
+.xyz {
+    padding: 10px 20px;
+    background-color: #ea4600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.xyz:hover {
+    background-color: #dc0909;
+}
+
+/* Product Cards Styling */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-spacing: 20px;
+}
+
+.dabba {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    width: 400px;
+}
+
+.dabba .img img {
+    max-width: 220px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.offer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff5c5c;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: none;
+}
+
+.details {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #444;
+    font-weight: bold;
+}
+
+.s1 {
+    font-size: 1.2rem;
+    color: #e50923;
+    text-decoration: line-through;
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+/* Common styles for both buttons */
+.atc {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 0 5px; /* Add spacing between buttons */
+}
+
+/* Style for the first button (Add to Cart) */
+.atc:first-of-type {
+    background-color: #1dac1d; /* Green background */
+    color: #fff;
+}
+
+.atc:first-of-type:hover {
+    background-color: #399f05; /* Darker green on hover */
+}
+
+/* Style for the second button (Buy Now) */
+.atc:last-of-type {
+    background-color: #39a11f; /* Orange background */
+    color: #fff;
+}
+
+.atc:last-of-type:hover {
+    background-color: #259a2c; /* Darker orange on hover */
+}
+
+/* Container to align buttons side by side */
+.button-container {
+    display: flex; /* Align buttons side by side */
+    justify-content: center; /* Center the buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Optional: Add spacing from other elements */
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+
+    .dabba {
+        margin-bottom: 20px;
+    }
+
+    .abc {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .xyz {
+        width: 80%;
+    }
+}

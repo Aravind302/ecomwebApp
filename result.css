@@ -1,0 +1,125 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Gradient background from light blue to dark blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Container to wrap the content */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for content */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+.header {
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content Section */
+.main-content {
+    padding: 40px;
+    text-align: center;
+}
+
+.message-section h3 {
+    font-size: 1.5rem;
+    color: #5f6368;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* Navigation Buttons */
+.navigation {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-3px); /* Slight elevation effect */
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .message-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .message-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>main page</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/userhome.css')}}">
+</head>
+<body class="a">
+	<div class="b">WELCOME TO E-COMMERCE </div>
+	<h2>Welcome {{mail}}</h2>
+	<nav class="nav">
+		<a class="tr" href="{{'home1'}}">HOME</a>
+		<a class="tr" href="{{'login'}}">LOGIN</a>
+		<a class="tr" href="{{'verify'}}">REGISTER</a>
+		<a class="tr" href="{{'about'}}">ABOUT</a>
+</nav>
+<div class="ab">
+	<form method="POST" action="{{url_for('showproducts')}}">
+		<input class="abc" type="text" name = "mail" value="{{mail}}">
+		<input class = "xyz" type="submit" value="Show Cart">
+	</form>
+	 <!-- <a href="{{'showcart'}}"><button class="aba">Show Cart</button></a> -->
+	
+</div>
+	<table cellspacing="150px" cellpadding="5px">
+		<tr>
+			<td>
+					
+				<div class="offer">
+					<span>60%</span>
+				</div>
+				<div class="dabba">
+					<div class="img">
+						<img src="{{url_for('static',filename='images/vaccum.png')}}">
+					</div>
+					<div class="details">
+	                    Name: Portable Car Vacuum Cleaner
+	                    <br>
+	                    Price:<span class="s1">1159/-</span> <br>
+	                    Discount price:695/-
+	                </div>
+					<div class="button-container">
+						<form method="POST" action="{{url_for('storedata')}}">
+						    <input class="abc" type="text" name = "gather" value="301, Portable Car Vacuum Cleaner,695,{{mail}},1">
+						    <input class = "atc" type="submit" value="Add to Cart">
+						</form>
+						<form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="101,Portable Car Vacuum Cleaner,695,{{mail}},1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+					</div>
+				</div>
+	        </td>
+			<td>
+					
+				<div class="offer">
+					<span>50%</span>
+				</div>
+				<div class="dabba">
+					<div class="img">
+						<img src="{{url_for('static',filename='images/bag.png')}}">
+					</div>
+					<div class="details">
+	                    Name:  Casual Skybag
+	                    <br>
+	                    Price:<span class="s1">999/-</span> <br>
+	                    Discount price:429/-
+	                </div>
+					<div class="button-container">
+						<form method="POST" action="{{url_for('storedata')}}">
+						    <input class="abc" type="text" name = "gather" value="302, Casual Skybag ,429,{{mail}},1">
+						    <input class = "atc" type="submit" value="Add to Cart">
+						</form>
+						<form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="101,Casual Skybag,429,{{mail}},1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+					</div>
+				</div>
+	        </td>
+			<td>
+					
+				<div class="offer">
+					<span>50%</span>
+				</div>
+				<div class="dabba">
+					<div class="img">
+						<img src="{{url_for('static',filename='images/mouse.png')}}">
+					</div>
+					<div class="details">
+	                    Name: HP Wireless Mouse
+	                    <br>
+	                    Price:<span class="s1">899/-</span> <br>
+	                    Discount price:499/-
+	                </div>
+					<div class="button-container">
+						<form method="POST" action="{{url_for('storedata')}}">
+						    <input class="abc" type="text" name = "gather" value="303,HP Wireless Mouse,499,{{mail}},1">
+						    <input class = "atc" type="submit" value="Add to Cart">
+						</form>
+						<form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="101,HP Wireless Mouse,499,{{mail}},1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+					</div>
+				</div>
+	        </td>
+		</tr>
+		<tr>
+			<td>
+					
+				<div class="offer">
+					<span>50%</span>
+				</div>
+				<div class="dabba">
+					<div class="img">
+						<img src="{{url_for('static',filename='images/laptopbag.png')}}">
+					</div>
+					<div class="details">
+	                    Name: Laptop bag
+	                    <br>
+	                    Price:<span class="s1">999/-</span> <br>
+	                    Discount price:599/-
+	                </div>
+					<div class="button-container">
+						<form method="POST" action="{{url_for('storedata')}}">
+						    <input class="abc" type="text" name = "gather" value="304,Laptop bag,599,{{mail}},1">
+						    <input class = "atc" type="submit" value="Add to Cart">
+						</form>
+						<form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="101,Laptop bag,599,{{mail}},1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+					</div>
+				</div>
+	        </td>
+			<td>
+					
+				<div class="offer">
+					<span>60%</span>
+				</div>
+				<div class="dabba">
+					<div class="img">
+						<img src="{{url_for('static',filename='images/umbrella.png')}}">
+					</div>
+					<div class="details">
+	                    Name: Umbrella
+	                    <br>
+	                    Price:<span class="s1">459/-</span> <br>
+	                    Discount price:199/-
+	                </div>
+					<div class="button-container">
+						<form method="POST" action="{{url_for('storedata')}}">
+						    <input class="abc" type="text" name = "gather" value="305,  Umbrella ,199,{{mail}},1">
+						    <input class = "atc" type="submit" value="Add to Cart">
+						</form>
+						<form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="101,Umbrella,199,{{mail}},1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+					</div>
+				</div>
+	        </td>
+			<td>
+					
+				<div class="offer">
+					<span>50%</span>
+				</div>
+				<div class="dabba">
+					<div class="img">
+						<img src="{{url_for('static',filename='images/shirt.png')}}">
+					</div>
+					<div class="details">
+	                    Name: Men's Slim Fit Shirt
+	                    <br>
+	                    Price:<span class="s1">999/-</span> <br>
+	                    Discount price:499/-
+	                </div>
+					<div class="button-container">
+						<form method="POST" action="{{url_for('storedata')}}">
+						    <input class="abc" type="text" name = "gather" value="306,Men's Slim Fit Shirt,499,{{mail}},1">
+						    <input class = "atc" type="submit" value="Add to Cart">
+						</form>
+						<form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="101,Men's Slim Fit Shirt,499,{{mail}},1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+					</div>
+				</div>
+	        </td>
+		</tr>
+		<tr>
+			<td>
+					
+				<div class="offer">
+					<span>30%</span>
+				</div>
+				<div class="dabba">
+					<div class="img">
+						<img src="{{url_for('static',filename='images/watch.png')}}">
+					</div>
+					<div class="details">
+	                    Name: Stainless Steel Chain Watch for Men
+	                    <br>
+	                    Price:<span class="s1">5999/-</span> <br>
+	                    Discount price:3999/-
+	                </div>
+					<div class="button-container">
+						<form method="POST" action="{{url_for('storedata')}}">
+						    <input class="abc" type="text" name = "gather" value="307,Stainless Steel Chain Watch for Men,3999,{{mail}},1">
+						    <input class = "atc" type="submit" value="Add to Cart">
+						</form>
+						<form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="101,Stainless Steel Chain Watch for Men,3999,{{mail}},1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+					</div>
+				</div>
+	        </td>
+			<td>
+					
+				<div class="offer">
+					<span>50%</span>
+				</div>
+				<div class="dabba">
+					<div class="img">
+						<img src="{{url_for('static',filename='images/earbuds.png')}}">
+					</div>
+					<div class="details">
+	                    Name: Wireless Earbuds
+	                    <br>
+	                    Price:<span class="s1">2999/-</span> <br>
+	                    Discount price:1539/-
+	                </div>
+					<div class="button-container">
+						<form method="POST" action="{{url_for('storedata')}}">
+						    <input class="abc" type="text" name = "gather" value="308,Wireless Earbuds,1539,{{mail}},1">
+						    <input class = "atc" type="submit" value="Add to Cart">
+						</form>
+						<form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="101,Wireless Earbuds,1539,{{mail}},1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+					</div>
+				</div>
+	        </td>
+			<td>
+					
+				<div class="offer">
+					<span>40%</span>
+				</div>
+				<div class="dabba">
+					<div class="img">
+						<img src="{{url_for('static',filename='images/camera.png')}}">
+					</div>
+					<div class="details">
+	                    Name:  Nikon D7500 20.9MP Digital SLR Camera
+	                    <br>
+	                    Price:<span class="s1">31999/-</span> <br>
+	                    Discount price:25999/-
+	                </div>
+					<div class="button-container">
+						<form method="POST" action="{{url_for('storedata')}}">
+						    <input class="abc" type="text" name = "gather" value="309, Nikon D7500 20.9MP Digital SLR Camera,25999,{{mail}},1">
+						    <input class = "atc" type="submit" value="Add to Cart">
+						</form>
+						<form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="101, Nikon D7500 20.9MP Digital SLR Camera,25999,{{mail}},1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+					</div>
+				</div>
+	        </td>
+		</tr>
+		<tr>
+			<td>
+					
+				<div class="offer">
+					<span>80%</span>
+				</div>
+				<div class="dabba">
+					<div class="img">
+						<img src="{{url_for('static',filename='images/hand.png')}}">
+					</div>
+					<div class="details">
+	                    Name: Adjustable Hand Gripper
+	                    <br>
+	                    Price:<span class="s1">599/-</span> <br>
+	                    Discount price:99/-
+	                </div>
+					<div class="button-container">
+						<form method="POST" action="{{url_for('storedata')}}">
+						    <input class="abc" type="text" name = "gather" value="310,Adjustable Hand Gripper,99,{{mail}},1">
+						    <input class = "atc" type="submit" value="Add to Cart">
+						</form>
+						<form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="101,Adjustable Hand Gripper,99,{{mail}},1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+					</div>
+				</div>
+	        </td>
+			<td>
+					
+				<div class="offer">
+					<span>60%</span>
+				</div>
+				<div class="dabba">
+					<div class="img">
+						<img src="{{url_for('static',filename='images/phone.png')}}">
+					</div>
+					<div class="details">
+	                    Name: Nokia All-New 105 Keypad Phone 
+	                    <br>
+	                    Price:<span class="s1">1999/-</span> <br>
+	                    Discount price:899/-
+	                </div>
+					<div class="button-container">
+						<form method="POST" action="{{url_for('storedata')}}">
+						    <input class="abc" type="text" name = "gather" value="311,Nokia All-New 105 Keypad Phone,899,{{mail}},1">
+						    <input class = "atc" type="submit" value="Add to Cart">
+						</form>
+						<form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="101,Nokia All-New 105 Keypad Phone ,899,{{mail}},1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+					</div>
+				</div>
+	        </td>
+			<td>
+					
+				<div class="offer">
+					<span>50%</span>
+				</div>
+				<div class="dabba">
+					<div class="img">
+						<img src="{{url_for('static',filename='images/powerbank.png')}}">
+					</div>
+					<div class="details">
+	                    Name: Fast Charging Powerbank,25,000mAh Battery
+	                    <br>
+	                    Price:<span class="s1">4999/-</span> <br>
+	                    Discount price:2999/-
+	                </div>
+					<div class="button-container">
+						<form method="POST" action="{{url_for('storedata')}}">
+						    <input class="abc" type="text" name = "gather" value="312,Fast Charging Powerbank,25,000mAh Battery,2999,{{mail}},1">
+						    <input class = "atc" type="submit" value="Add to Cart">
+						</form>
+						<form action="{{'storecart1'}}" method="POST">
+                            <input type="text" name="cart" value="101,Fast Charging Powerbank,25,000mAh Battery,2999,{{mail}},1" hidden>
+                            <input class="atc" type="submit" value="Buy Now">
+                        </form>
+					</div>
+				</div>
+	        </td>
+		</tr>
+		<tr>
+    </table> 
+</body>
+</html>

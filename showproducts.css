@@ -1,0 +1,96 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/* Table Styling */
+.product-table {
+    margin: 30px auto;
+    max-width: 80%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Total Price Section */
+.total-price {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.total-price .price {
+    color: #007BFF;
+}
+
+/* Payment Section */
+.payment-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pay-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.pay-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
